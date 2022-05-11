@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(120, 242, 242);
+}
+.header {
+    text-align: center;
+    font-size: 50px;
+    font-style: oblique;
+    background-color: rgb(120, 242, 242);
+}
+.sumario {
+    margin-left: 50%;
+    font-size: x-large;
+    background-color: rgb(113, 198, 198);
+    border: 3px black solid;
+}
+.article {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.articleSection {
+    width: 500px;
+    display: inline;
+}
+.articleAside {
+   text-align: center;
+   display: inline-block;
+   margin-left: 50px;
+}
+.articleTable:hover {
+    background-color: bisque;
+}
+.articleTable td {
+    border: 1px black solid;
+}
+.curiositySection {
+    display: inline-block;
+    vertical-align: auto;
+    padding: 20px;
+    padding-right: 400px;
+    background-color: aqua;
+    border: 2px black solid;
+}
+.curiositySection p {
+    padding: 20px;
+    padding-left: 60px;
+}
+#fotoGolpe {
+    float: left;
+    padding: 5px;
+}
+.curiositySection2 {
+    display: inline-block;
+    vertical-align: auto;
+    padding: 20px;
+    padding-right: 400px;
+    background-color: aqua;
+    border: 2px black solid;
+}
+.curiositySection2 p {
+    padding: 20px;
+    padding-left: 60px;
+}
+.videoDiv {
+    text-align: center;
+}
+.references {
+    background-color: aqua;
+    border: 2px black solid;
+}
+.footer {
+    text-align: center;
+}
