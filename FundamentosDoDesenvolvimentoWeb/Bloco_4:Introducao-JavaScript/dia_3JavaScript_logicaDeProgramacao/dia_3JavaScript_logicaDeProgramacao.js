@@ -47,4 +47,4 @@ for (let i = 2; i <= numeros; i += 1) {
       numerosPrimos.push(i);
     }
   }
-  console.log(numerosPrimos[numerosPrimos.length - 1])
+  console.log(numerosPrimos[numerosPrimos.length - 1]);
