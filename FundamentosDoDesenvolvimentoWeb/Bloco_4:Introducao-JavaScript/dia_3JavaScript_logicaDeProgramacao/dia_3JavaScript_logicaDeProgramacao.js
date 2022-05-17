@@ -34,13 +34,17 @@
 // console.log(menorValor)
 // 4 =>
 let numeros = 50;
-let numerosPrimos = 0;
+let numerosPrimos = [];
 for (let i = 2; i <= numeros; i += 1) {
+  let isPrimo = true;
   for (let i2 = 2; i2 < i; i2 += 1) {
-    if (numeros[i] % numeros[i2] != 0) {
-      let numerosPrimos = numeros[i];
-      } 
+    if (i % i2 == 0) {
+      isPrimo = false;
+      break;
     }
-    console.log(numerosPrimos)
+    }
+    if (isPrimo == true) {
+      numerosPrimos.push(i);
+    }
   }
-
+  console.log(numerosPrimos[numerosPrimos.length - 1])
