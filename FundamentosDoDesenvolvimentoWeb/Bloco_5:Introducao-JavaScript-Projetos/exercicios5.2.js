@@ -47,4 +47,4 @@ section3.style.marginRight = 'auto';
 document.querySelector('main').style.backgroundColor = 'green';
 let Lis = document.querySelectorAll('li');
 Lis[Lis.length - 1].remove();
-Lis[Lis.length - 2].remove();
+Lis[Lis.length - 2].remove();                                                                     
