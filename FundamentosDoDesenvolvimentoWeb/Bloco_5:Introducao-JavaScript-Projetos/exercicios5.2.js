@@ -30,11 +30,21 @@ document.querySelector('.left-content').appendChild(imagem);
 // 8
 let listaUl = document.createElement('ul');
 let listaDeLis = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
-document.querySelector('section3').appendChild('listaUl');
-for (let i = 0; i < listaUl.length; i += 1) {
+section3.appendChild(listaUl);
+for (let i in listaDeLis) {
   let linha = document.createElement('li');
-  linha.innerText = listaDeLis[i];
-  document.querySelector('listaUl').appendChild('linha');
+  linha.innerHTML = listaDeLis[i];
+  listaUl.appendChild(linha);
 }
+section3.appendChild(listaUl);
 
-
+novoH1.className = 'title';
+sectionCenter.className = 'description';
+section2.className = 'description';
+section3.className = 'description';
+document.querySelector('main').removeChild(section2);
+section3.style.marginRight = 'auto';
+document.querySelector('main').style.backgroundColor = 'green';
+let Lis = document.querySelectorAll('li');
+Lis[Lis.length - 1].remove();
+Lis[Lis.length - 2].remove();
