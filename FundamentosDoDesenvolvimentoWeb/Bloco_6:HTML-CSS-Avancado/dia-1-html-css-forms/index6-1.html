@@ -23,7 +23,7 @@
     <br>
     <h3>Escolha o Destino:</h2>
       <label for="destiny1">
-      <input type="radio" name="destiny" id="destiny1" value="city">Cidade 
+      <input type="radio" name="destiny" id="destiny1" value="city" required>Cidade 
       </label>
       <label for="destiny2">
       <input type="radio" name="destiny" id="destiny2" value="camp">Campo
@@ -34,10 +34,26 @@
       <label for="destiny4">
       <input type="radio" name="destiny" id="destiny4" value="mont">Montanhas
       </label>
-   
+      <br><br>
+   <label for="abstract">Por que você deveria ser o vencedor
+     <input type="textarea" id="abstract" maxlength="300">
+   </label>
+   <label for="date">Qual a melhor data para a sua viagem?
+     <input type="date" name="tripDay" id="date" required>
+   </label>
+   <br>
+   <label for="permission">Você permite que suas imagens durante as férias possam ser usadas para divulgação do curso?
+     <input type="checkbox" name="autorization" id="permission" required>
+   </label>
+   <br>
+   <label for="merchan">Você gostaria de receber outras oportunidades da Trybe?
+     <input type="checkbox" name="merchan" id="merchan">
+   </label>
+   <div id="buttons">
+     <button type="submit" id="sendButton">Enviar</button>
+     <button type="reset" id="resetButton">Limpar</button>
+   </div>
   </form>
-
-  
   <script src="js6-1.js"></script>
 </body>
 </html>
