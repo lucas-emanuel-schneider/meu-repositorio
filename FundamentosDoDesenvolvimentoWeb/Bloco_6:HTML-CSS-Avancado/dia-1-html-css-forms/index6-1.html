@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style6-1.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <header>
+      <h1>Formulário para Trybe-trip</h1>
+      <p>Preencha o Formulário para concorrer.</p>
+  </header>
+  <form action="" method="get">
+    <label for="fullName">Nome completo:
+      <input type="text" minlength="10" maxlength="40" id="fullName" required placeholder="digite seu nome">
+    </label>
+    <br>
+    <label for="email">E-mail:
+      <input type="email" name="input-email" id="email" required placeholder="digite seu E-mail" minlength="10" maxlength="50">
+    </label>
+    <br>
+    <h3>Escolha o Destino:</h2>
+      <label for="destiny1">
+      <input type="radio" name="destiny" id="destiny1" value="city">Cidade 
+      </label>
+      <label for="destiny2">
+      <input type="radio" name="destiny" id="destiny2" value="camp">Campo
+      </label>
+      <label for="destiny3">
+      <input type="radio" name="destiny" id="destiny3" value="beach">Praia
+      </label>
+      <label for="destiny4">
+      <input type="radio" name="destiny" id="destiny4" value="mont">Montanhas
+      </label>
+   
+  </form>
+
+  
+  <script src="js6-1.js"></script>
+</body>
+</html>
