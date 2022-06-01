@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="style6-1.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <header>
+      <h1>Formulário para Trybe-trip</h1>
+      <p>Preencha o Formulário para concorrer.</p>
+  </header>
+  <form action="" method="get">
+    <div class="field">
+    <label class="label" for="fullName">Nome completo:
+      <input type="text" class="input" minlength="10" maxlength="40" id="fullName" required placeholder="digite seu nome">
+    </label>
+    </div>
+    <div class="field">
+    <label class="label" for="email">E-mail:
+      <input type="email" class="input" name="input-email" id="email" required placeholder="digite seu E-mail" minlength="10" maxlength="50">
+    </label>
+    </div>
+    <div class="field">
+    <h3>Escolha o Destino:</h2>
+      <label class="label" for="destiny1">
+      <input type="radio" name="destiny" id="destiny1" value="city" required>Cidade 
+      </label>
+      <label class="label" for="destiny2">
+      <input type="radio" name="destiny" id="destiny2" value="camp">Campo
+      </label>
+      <label class="label" for="destiny3">
+      <input type="radio" name="destiny" id="destiny3" value="beach">Praia
+      </label>
+      <label class="label" for="destiny4">
+      <input type="radio" name="destiny" id="destiny4" value="mont">Montanhas
+      </label>
+    </div>
+    <div class="field">
+   <label for="abstract" class="label">Por que você deveria ser o vencedor
+     <input type="textarea" class="textarea" id="abstract" maxlength="300">
+   </label>
+    </div>
+    <div class="field">
+   <label for="date" class="label">Qual a melhor data para a sua viagem?
+     <input type="date" name="tripDay" id="date" required>
+   </label>
+   </div>
+   <div class="field">
+   <label class="label" for="permission">Você permite que suas imagens durante as férias possam ser usadas para divulgação do curso?
+     <input type="checkbox" name="autorization" id="permission" required>
+   </label>
+   </div>
+   <div class="field">
+   <label class="label" for="merchan">Você gostaria de receber outras oportunidades da Trybe?
+     <input type="checkbox" name="merchan" id="merchan">
+   </label>
+   </div>
+   <div id="buttons">
+     <button type="submit" id="sendButton">Enviar</button>
+     <button type="reset" id="resetButton">Limpar</button>
+   </div>
+  </form>
+  <script src="js6-1.js"></script>
+</body>
+</html>
