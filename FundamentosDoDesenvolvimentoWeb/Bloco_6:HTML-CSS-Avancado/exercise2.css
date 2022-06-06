@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+@media screen and (max-width: 600px) {
+  body {
+    margin: 2%;
+    background-color: rgb(248, 237, 224);
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+  header p {
+    align-self: center;
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .aside-one, .aside-two {
+    font-size: 23px;
+  }
+  .main-content {
+    font-size: 24px;
+    margin: 3%;
+    text-align: justify;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  footer, footer p {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 600px) {
+  body {
+    margin: 5%;
+    background-color: rgb(246, 224, 198);
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+    padding: 4%;
+  }
+  nav {
+    align-self: flex-start;
+  }
+  header p {
+    align-self: center;
+  }
+  h1 {
+    font-size: 33px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .aside-one, .aside-two {
+    font-size: 25px;
+  }
+  .main-content {
+    font-size: 30px;
+    text-align: justify;
+    margin: 5%;
+  }
+  footer, footer p {
+    text-align: center;
+    font-size: 18px;
+    padding: 1%;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: rgb(240, 200, 150);
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+  header p {
+    width: 50%;
+    font-size: 40px;
+  }
+  header nav {
+    font-size: 40px;
+    padding: 5%;
+  }
+  h1 {
+    font-size: 38px;
+    margin: 4%;
+  }
+  h2 {
+    font-size: 35px;
+    margin: 2%;
+  }
+  .aside-one, .aside-two {
+    font-size: 30px;
+  }
+  .main-content {
+    font-size: 35px;
+  }
+  footer p {
+    font-size: 20px;
+  }
+}
