@@ -116,5 +116,15 @@ const books = [
 //   return smallName;
 // }
 // console.log(smallerName(books));
-// 3
-
+// // 3
+// const expect26Car = books.find((book) => book.name.length === 26).name;
+// console.log(expect26Car);
+// // 4
+// const booksDrecres = books.sort((a, b) => b.releaseYear - a.releaseYear);
+// console.log(booksDrecres);
+// 5
+// const secXX = books.every((book) => book.author.birthYear >= 2000);
+// console.log(secXX);
+// 6
+// const releaseOn80s = books.some((book) => book.releaseYear >= 1980 || book.releaseYear < 1990);
+// console.log(releaseOn80s);
