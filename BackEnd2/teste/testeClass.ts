@@ -1,7 +1,5 @@
 abstract class Personagem {
   constructor() { }
-  protected abstract set name(newName: string)
-  protected abstract get name(): string
   abstract speak():void
   abstract atack():void
 }
@@ -10,10 +8,12 @@ class Guerreiro extends Personagem {
   constructor(private _name: string, private _age: number, private _power: string) {
     super()
   }
-  get name(): string {
+  public get name(): string {
     return this._name
   }
-  set name(newName: string) {
+  public set name(newName: string) {
+    if (newName.length > 25) throw new Error('Nome Muito GRANDE!');
+    
     this._name = newName
   }
   set age(newAge: number) {
@@ -36,3 +36,5 @@ Thor.speak();
 Thor.atack();
 Hulk.speak();
 Hulk.atack();
+// teste de erro
+// Thor.name = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
