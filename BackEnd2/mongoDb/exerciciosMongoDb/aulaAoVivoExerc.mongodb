@@ -1,0 +1,40 @@
+// use('aula-filter-operators');
+// db.filmes.find({}, { 'avaliacao.ruim': 0, 'avaliacao.medio': 0}).sort({diretor: 1, titulo: 1, ano: -1, 'avaliacao.bom'});
+
+// use("aula-filter-operators");
+// db.filmes.find({ 
+//   $or: [
+//     {diretor: "Quentin Tarantino"},
+//     {"avaliacao.bom": { $gte: 5, $lte: 10 }},
+//   ]
+// });
+
+// use("aula-filter-operators");
+// db.filmes.find({ 
+//     ano: 2014
+//     'avaliacao.ruim': { $not: {$gte: 5, $lte: 10 } },
+// });
+
+
+// use("aula-filter-operators");
+// db.filmes.find({ 
+//     ano: {$in: [2001, 1968, 1995]}
+// });
+
+// use("aula-filter-operators");
+// db.filmes.find({ 
+//     ano: {$nin: [2013, 2008]}
+// });
+
+// use("aula-filter-operators");
+// db.filmes.deleteMany({ 
+//     ano: 2001
+// });
+
+// use("aula-filter-operators");
+// db.filmes.find({
+//   diretor: "Steven Spielberg",
+//   $nor: [
+//     { titulo: "Indiana Jones e a Última Cruzada" },
+//     { ano: 1989 } ]
+// });

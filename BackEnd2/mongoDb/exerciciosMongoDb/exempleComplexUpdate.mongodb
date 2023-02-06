@@ -1,0 +1,96 @@
+
+// db.books.updateOne({
+//   title: "Flex 4 in Action"
+// },
+// {
+//   $push: {
+//     authors: 'Lucas Schneider'
+//   }
+// }
+// );
+
+// POP com -1 tira o primeiro valor, com 1 tira o ultimo
+
+// db.books.updateOne({
+//   title: "Flex 4 in Action"
+// },
+// {
+//   $pop: {
+//     authors: 1
+//   }
+// }
+// );
+
+// Pull remove todos os valores no array que se enquadrão no que foi passado
+
+// db.books.updateOne({
+//   title: "Flex 4 in Action"
+// },
+// {
+//   $pull: {
+//     authors: 'Lucas Schneider'
+//   }
+// }
+// );
+
+// db.books.updateOne({
+//   title: "Flex 4 in Action"
+// },
+// {
+//   $pull: {
+//     authors: {
+//       $in: ['Joel Hooks', "Tariq Ahmed"]
+//     }
+//   }
+// }
+// );
+
+// db.books.updateOne({
+//   title: "Flex 4 in Action"
+// },
+// {
+//   $push: {
+//     authors: {
+//       $each: ["Joel Hooks", "Tariq Ahmed"]
+//     }
+//   }
+// }
+// );
+
+// db.books.updateOne({
+//   title: "Flex 4 in Action"
+// },
+// {
+//   $push: {
+//     authors: {
+//       $each: ["Joel Hooks", "Tariq Ahmed"]
+//     }
+//   }
+// }
+// );
+
+// addToSet adiciona somente se o elemento não existir no array
+
+// db.books.updateOne({
+//   title: "Flex 4 in Action"
+// },
+// {
+//   $addToSet: {
+//     authors: {
+//       $each: ["Joel Hooks", "Tariq Ahmed", "Teste de AddSet"]
+//     }
+//   }
+// }
+// );
+
+// db.books.updateOne({
+//   title: "Flex 4 in Action"
+// },
+// {
+//   $pull: {
+//     authors: "Teste de AddSet"
+//   }
+// }
+// );
+
+// db.books.find();

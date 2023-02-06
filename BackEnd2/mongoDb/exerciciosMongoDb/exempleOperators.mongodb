@@ -1,0 +1,6 @@
+// show('dbs');
+// show('collections');
+// db.bios.find({'awards.year': { $gt: 2000 } }, { 'name.first': 1, _id: 0 });
+// db.bios.find({'contribs': { $nin: ['ALGOL', 'Simula'] } }, { contribs: true });
+// db.bios.find({'contribs': 'ALGOL' }, { contribs: true });
+// db.bios.countDocuments({ $and: [{ contribs: { $in: ['ALGOL', 'Simula'] }}]});
