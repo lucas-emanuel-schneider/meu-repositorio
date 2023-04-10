@@ -1,7 +1,15 @@
 class Person:
     def __init__(self, name, age):
-        self.name = name
+        self._name = name
         self.age = age
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, new_name):
+        self._name = new_name
 
     def speak(self, phrase):
         print(f'The {self.name} say: {phrase}')
@@ -19,7 +27,10 @@ class Hero(Person):
 
 
 Lucas = Person('Lucas', 28)
+print(Lucas.name)
+Lucas.name = 'Daniel'
+print(Lucas.name)
 Vingador = Hero(Lucas, 'Lo Hombre Malo', 'Judgement')
 Vingador.speak('Hello')
-print(Lucas.name)
 Vingador.save_people()
+# print(Lucas.name)
